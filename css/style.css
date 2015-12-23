@@ -237,7 +237,7 @@ ul.menu_list {
 
 
 /*container index*/
-.contnet ul, ol, dd,dt {
+.content ul, ol, dd,dt {
     padding-left: 20px;
     margin-bottom: 15px;
 	
@@ -246,21 +246,24 @@ ul.menu_list {
 	list-style:disc;
 }
 .container {
-    padding: 0 40px;
     clear: both;
+    box-shadow: 0px 0px 9px;
 }
-.container p {
+.content {
+    padding: 40px;
+}
+.content p {
     text-indent: 20px;
     line-height: 16px;
     text-align: justify;
     margin-bottom: 20px;
 }
-.container p a{
+.content p a{
     color:#981b45;
     font-family:"PTSansBold";
     text-decoration:underline;
 }
-.contnet img {
+.content img {
     width: 100%;
     margin-bottom: 20px;
 }
@@ -360,6 +363,31 @@ ul.menu_list {
     text-decoration: underline;
 }
 /*publications  end*/
+/*project*/
+.project_item {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.poject_item_img {
+    width: 30%;
+    border-radius: 7px;
+    float: left;
+    margin-right: 2%;
+}
+.poject_item_img img {
+    margin-bottom: 0px;
+}
+.project_title {
+    font-family: "PTSansBold";
+    color: #981b45;
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: block;
+}
+.project_title:hover {
+    text-decoration: underline;
+}
+/*project end*/
 /*container end*/
 /*footer*/
 .footer_container {
@@ -475,13 +503,16 @@ ul.menu_list {
 }
 
 .fot_item{
-    width:33%;
-    margin-right:0px;
+        width: 31%;
+    margin-right: 2%;
 }
 .fot_item:last-child{
     width:100%;
     text-align:center;
     margin-bottom:0px;
+}
+.fot_item:nth-child(3n) {
+    margin-right: 0px;
 }
 }
 @media screen and (max-width: 768px){
@@ -496,8 +527,15 @@ ul.menu_list {
     background: #771234;
     overflow: hidden;
 }
-.container {
-padding: 0 20px;
+.project_title {
+    font-size: 14px;
+        margin-bottom: 10px;
+}
+.container p {
+    margin-bottom: 10px;
+}
+.content {
+padding:  20px;
 }
 .content_block{
     width:100%;
@@ -552,12 +590,16 @@ padding: 0 20px;
    
     text-align: center;
 }
-
+.poject_item_img {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0px;
+}
 .fot_item{
 	margin-bottom:10px;
 }
- .container {
-padding: 0 10px;
+ .content {
+padding: 10px;
 }
 .fot_item:nth-child(2){
 	display:none
