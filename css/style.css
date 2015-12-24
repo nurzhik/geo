@@ -388,6 +388,47 @@ ul.menu_list {
     text-decoration: underline;
 }
 /*project end*/
+/*contact*/
+.content .contact_item {
+    text-indent: 0px;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #981b45;
+}
+.contact_title {
+    font-family: "PTSansBOld";
+    font-size: 18px;
+    color: #981b45;
+    margin-bottom: 10px;
+    display: block;
+}
+.map {
+    margin-top: 20px;
+    height: 395px;
+    overflow: hidden;
+}
+.contact_item a {
+    font-family: "PTSansRegular";
+    font-size: 18px;
+}
+/*contact end*/
+/*404*/
+.error {
+    font-family: "PTSansBold";
+    color: #981b45;
+        font-size: 48px;
+        text-align:center;
+}
+.error span {
+    display: block;
+    font-size: 26px;
+}
+.error a {
+    color: #981b45;
+    font-size: 18px;
+    text-decoration: underline;
+}
+/*404*/
 /*container end*/
 /*footer*/
 .footer_container {
